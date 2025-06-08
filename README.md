@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# Bursa Sıcaklık Uygulaması
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bu uygulama, Bursa'nın anlık sıcaklık ve hava durumu bilgilerini gösteren bir React Native uygulamasıdır.
 
-## Get started
+## Özellikler
 
-1. Install dependencies
+- Bursa'nın anlık sıcaklık bilgisi
+- Nem ve rüzgar hızı bilgileri
+- Her 5 dakikada bir otomatik güncelleme
+- Manuel yenileme özelliği
+- Hata durumunda kullanıcı bilgilendirmesi
+- Şık ve kullanıcı dostu arayüz
 
-   ```bash
-   npm install
-   ```
+## Kurulum
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Projeyi klonlayın:
 ```bash
-npm run reset-project
+git clone https://github.com/mrvblgn/BursaTemeperatureApp.git
+cd BursaTemperatureApp
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Bağımlılıkları yükleyin:
+```bash
+npm install
+```
 
-## Learn more
+3. OpenWeather API anahtarınızı alın:
+- [OpenWeather](https://openweathermap.org/api) sitesine gidin
+- Ücretsiz hesap oluşturun
+- API anahtarınızı alın
+- `services/weatherService.ts` dosyasındaki `API_KEY` değişkenini kendi API anahtarınızla güncelleyin
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Uygulamayı başlatın:
+```bash
+npx expo start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Kullanılan Teknolojiler
 
-## Join the community
+- React Native
+- Expo
+- OpenWeather API
+- Axios
+- TypeScript
 
-Join our community of developers creating universal apps.
+## Geliştirme
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Uygulama geliştirme için aşağıdaki komutları kullanabilirsiniz:
+
+```bash
+# Geliştirme sunucusunu başlat
+npx expo start
+
+# iOS simülatöründe çalıştır
+npx expo start --ios
+
+# Android emülatöründe çalıştır
+npx expo start --android
+```
+
+## Lisans
+
+MIT
